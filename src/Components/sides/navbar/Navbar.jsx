@@ -19,23 +19,32 @@ const Navbar = () => {
                 </div>
                 <div className='items'>
                     <div className='item'>
-                    <LanguageIcon/>
+                    <LanguageIcon className='icon'/>
                         English
                     </div>
                     <div className='item'>
-                    <DarkModeOutlinedIcon/>
+                    <DarkModeOutlinedIcon className='icon'/>
                     </div>
                     <div className='item'>
-                        <FullscreenExitOutlinedIcon/>
+                        <FullscreenExitOutlinedIcon className='icon'/>
                     </div>
                     <div className='item'>
-                        <NotificationsNoneOutlinedIcon/>
+                        <NotificationsNoneOutlinedIcon className='icon'/>
+                        <div className='counter'>1</div>
                     </div>
                     <div className='item'>
-                        <ChatBubbleOutlineOutlinedIcon/>
+                        <ChatBubbleOutlineOutlinedIcon className='icon'/>
+                        <div className='counter'>2</div>
                     </div>
                     <div className='item'>
-                        <FormatListNumberedOutlinedIcon/>
+                        <FormatListNumberedOutlinedIcon className='icon'/>
+                    </div>
+                    <div className='item'>
+                        <img
+                            src={require('./Freke1.jpg')}
+                            alt='Me'
+                            className='avatar'
+                        />
                     </div>
                 </div>
             </div>

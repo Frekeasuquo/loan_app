@@ -1,5 +1,9 @@
+import Chart from '../../chart/Chart';
+import Featured from '../../featured/Featured';
 import Navbar from '../../sides/navbar/Navbar';
 import Sidebar from '../../sides/sidebar/Sidebar';
+import Table from '../../table/Table';
+import Widget from '../../widgets/Widget';
 import './Home.scss'
 
 
@@ -10,7 +14,22 @@ const Home = () => {
             <Sidebar/>
             <div className='homeContainer'>
                 <Navbar/>
-                Home Container
+                <div className='widgets'>
+                    <Widget type="user"/>
+                    <Widget type="order"/>
+                    <Widget type="earning"/>
+                    <Widget type="balance"/>
+                </div>
+                <div className='charts'>
+                    <Featured/>
+                    <Chart/>
+                </div>
+                <div className='listContainer'>
+                    <div className='listTitle'>
+                        Latest Transactions
+                    </div>
+                    <Table/>
+                </div>
             </div>
         </div>
     )
